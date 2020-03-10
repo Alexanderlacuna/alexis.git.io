@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>this is the tree app</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+	<div class="container">
+		<div class="section section-a">
+		<div class="section-a-header">
+			<h3>Surya</h3>
+		</div>
+
+		<div class="section-a-body">
+			<div class="body-header">
+				<h1>TREE GREEN</h1>
+
+
+				
+
+
+			</div>
+
+			<div  class="body-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, eligendi exercitationem soluta doloribus aliquam aut?</p>
+
+				<!-- link to learn more -->
+				<div class="learn">
+					<!-- <h3>L</h3 -->
+
+					<div class="learn-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sunt quibusdam ab laboriosam corrupti fugiat cumque. Accusantium voluptas magni voluptate laborum nisi, libero sint porro officiis. Repellendus aperiam odio id, consectetur labore, perspiciatis omnis impedit corrupti numquam corporis blanditiis dignissimos.</p>
+					</div>
+					<div class="button-control">
+						<button class="btn">Learn more</button>
+						
+					</div>
+					
+				</div>
+			</div>
+
+			
+		</div>
+		</div>
+
+		<div class="control-image">
+			<img src="/img1.png">
+		</div>
+
+		<div class="section section-b">
+
+			<div class="section-header-nav">
+				<a href="#">Visulizer</a>
+				<a href="#">Paint Selector</a>
+				<a href="#">Color Catalogue</a>
+				<a href="#">Budget Calculator</a>
+
+				<!-- menu goes here -->
+
+				
+			</div>
+
+			<div class="section-content">
+				<!-- icons goes here -->
+				<p>Water proof</p>
+				<i class="fas fa-tint"></i>
+				<p>Dust proof</p>
+				<i class="fas fa-industry"></i>
+				<p>Heat proof</p>
+
+				<i class="fas fa-fire-alt"></i>
+				<p>Easy to clean</p>
+
+				<i class="fas fa-broom"></i>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container{
+			background:#fff;
+			width: 100vw;
+			height: 100vh;
+
+			display: flex;
+			position: relative;
+			/*overflow-x: hidden;*/
+			overflow: hidden;
+		}
+
+		.section-a{
+
+		
+			width: 45vw;
+			padding: 40px;
+
+		}
+
+		.section-a-header{
+			font-family: 'Oleo Script', cursive;
+			font-size: 28px;
+			letter-spacing: 0.2em;
+			font-weight: bolder;
+			color:#348558;;
+		}
+
+		.section-a-body{
+			display: flex;
+			flex-direction:column;
+			justify-content: center;
+			align-items: flex-start;
+			height: 80vh;
+			padding-right: 50px;
+			/*text-align: center;*/
+
+		}
+
+		.section-b{
+			width: 55vw;
+				/*background: #348558;*/
+
+				background-image: url("./waving1.svg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+
+
+				padding: 50px;
+
+		}
+         .body-header{
+         	margin: 20px;
+
+         	font-weight: bold;
+         }
+
+         .body-content{
+         	line-height:1.5em;
+         	margin: 20px;
+         	padding: 10px;
+
+         	font-size:14px;
+
+         	color:#333;
+         }
+
+         .control-image img{
+         	position: absolute;
+         	left:25vw;
+         	top:35vh;
+         	animation-name: spin-image;
+         	animation-duration: 4s;
+         	/*animation-iteration-count: infinite;*/
+         	animation-fill-mode: forwards;
+         	/*transform: rotate(20deg);*/
+
+         	transition-duration: 3s;
+
+         	transition-delay: 1s;
+         	cursor:pointer;
+
+         	
+
+         	/*background-size: cover;*/
+         }
+           .control-image img:hover{
+           	transform: scale(1.1);
+
+           }
+
+         @keyframes spin-image{
+         	from{
+         	    transform:rotate(0deg);
+
+         	    /*transform: translate3d(10px,10px,10px);*/
+         	}
+         	to{
+         		transform:rotate(25deg);
+
+         		transform: scale(1.3);
+         		/*transform: translate3d(20px,20px,20px);*/
+         	}
+         }
+ 
+
+    .section-b{
+    	color:#fff;
+
+    	/*width: 100%;*/
+    }
+
+    .section-b a{
+    	color:#fff;
+    	text-decoration: none;
+    	margin: 10px;
+    	padding: 10px;
+    	font-size:13px;
+
+    	font-weight: bold;
+    	/*padding:40px;*/
+    }
+
+    .section-header-nav{
+    	display: flex;
+    	text-align: center;
+    	justify-content:center;
+    }
+
+    .section-content{
+    	display: flex;
+    	flex-direction: column;
+    	margin-top:20px;
+    	margin-left:30px;
+
+    	height:70vh;
+    	align-items: center;
+    	justify-content:center;
+    }
+
+    .section-content p{
+    	margin: 15px;
+    	padding: 10px;
+
+    	font-size:14px;
+    	font-weight: 380px;
+
+    }
+
+    .btn{
+    	margin:10px;
+    	margin-top: 23px;
+    	padding:20px;
+    	color:#fff;
+    	background: #348558;
+    	border: none;
+    	border-radius: 6px;
+    	cursor:pointer;
+    }
+  .learn-content{
+  margin-top:5px;
+  display: none;
+  transition: 4s;
+  }
+ /*section b content*/
+
+
+
+	</style>
+
+
+<script src="https://kit.fontawesome.com/0575292d25.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	let btn=document.querySelector(".btn")
+	let learn=document.querySelector(".learn-content")
+
+	btn.addEventListener("click",(e)=>{
+
+		// console.log(!!learn.style.display)
+
+		
+
+
+		learn.style.display=!!learn.style.display?"none":"block"
+	})
+</script>
+</body>
+</html>
